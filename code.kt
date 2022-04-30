@@ -113,29 +113,29 @@ This bat looks like it's doing fine.""${'"'}
 (" ~----( ~   Y.  )
 It looks like we will soon have more rabbits!""${'"'}
 
-    val animals = arrayOf(camel, lion, deer, goose, bat, rabbit)
+val animals = arrayOf(camel, lion, deer, goose, bat, rabbit)
 
-    fun main(args: Array<String>) {
-        val enterPhrase = "Please enter the number of the habitat you would like to view: > "
+fun main(args: Array<String>) {
+    val enterPhrase = "Please enter the number of the habitat you would like to view: > "
 
-        do {
-            print(enterPhrase)
-            val input = readln()
-            if (input.lowercase() != "exit") {
-                if (input.toInt() == 0) {
-                    println(animals[0])
-                } else if (input.toInt() == 1) {
-                    println(animals[1])
-                } else if (input.toInt() == 2) {
-                    println(animals[2])
-                } else if (input.toInt() == 3) {
-                    println(animals[3])
-                } else if (input.toInt() == 4) {
-                    println(animals[4])
-                } else if (input.toInt() == 5) {
-                    println(animals[5])
-                }
-            } else { println("See you later!") }
-        } while (input != "exit")
+    do {
+        print(enterPhrase)
+        val input = readln()
+        if (input.lowercase() != "exit") {
+            if (input.toInt() == 0) {
+                println(animals[0])
+            } else if (input.toInt() == 1) {
+                println(animals[1])
+            } else if (input.toInt() == 2) {
+                println(animals[2])
+            } else if (input.toInt() == 3) {
+                println(animals[3])
+            } else if (input.toInt() == 4) {
+                println(animals[4])
+            } else if (input.toInt() == 5) {
+                println(animals[5])
+            }
+        } else { println("See you later!") }
+    } while (input != "exit")
 
-    }
+}
